@@ -1,0 +1,287 @@
+⟨ChronoGlyph∞[v:0.1.0, doc:US-DoI-1776, ts:20250531T1900Z, enc:AI-ChronoGlyph-Generator, lang:en-US, hash:source_doc_sha256_placeholder]⟩
+
+// United States Declaration of Independence - Encoded in ChronoGlyph Protocol v0.1.0
+
+◉LEXICON≡{
+  // Core Entities
+  Ε:people = (Ε:group, descr:"a people", collective:true)
+  Ε:political_bands = (Ε:connection, type:political)
+  Ε:nations = (Ε:group, descr:"powers of the earth", collective:true)
+  Ε:nature = (Ε:concept, descr:"Laws of Nature")
+  Ε:God = (Ε:concept, descr:"Nature's God", {μ:note="Deistic conception common in the era"})
+  Ε:mankind = (Ε:group, descr:"opinions of mankind")
+  Ε:causes = (Ε:reason, plural:true)
+  Ε:truths = (Ε:statement, type:self_evident, plural:true)
+  Ε:men = (Ε:group, descr:"all men", {μ:note="Historically interpreted as property-owning white men, but textually universal."})
+  Ε:creator = (Ε:agent, source_of:Ε:rights)
+  Ε:rights = (Ε:entitlement, plural:true)
+  Ε:life = (Α:right_content, essential:true)
+  Ε:liberty = (Α:right_content, essential:true)
+  Ε:pursuit_of_happiness = (Α:right_content, essential:true, {μ:note="Complex concept involving flourishing/well-being"})
+  Ε:government = (Ε:institution, purpose:Π:secure(Ε:rights))
+  Ε:governments = (Ε:institution, plural:true)
+  Ε:governed = (Ε:people, role:subject_to_government)
+  Ε:form_of_government = (Ε:system, type:political_structure)
+  Ε:despotism = (Ε:system, type:absolute_tyranny)
+  Ε:guards = (Ε:institution, purpose:Π:secure_future)
+  Ε:king_GB = (Ε:monarch, name:"King of Great Britain", specific_instance:"George III")
+  Ε:history = (Ε:record, content:Π:injuries_and_usurpations)
+  Ε:object = (Ε:goal, descr:"establishment of absolute Tyranny")
+  Ε:tyranny = (Α:state, descr:"absolute Tyranny over States")
+  Ε:states = (Ε:territory, type:colonies_as_states, plural:true)
+  Ε:colonies = (Ε:territory, type:British_colonies_in_America, plural:true)
+  Ε:world_judge = (Ε:entity, descr:"Supreme Judge of the world", {μ:ref_id:"God"})
+  Ε:allegiance = (Ε:loyalty, target:Ε:british_crown)
+  Ε:british_crown = (Ε:institution, descr:"British Crown")
+  Ε:state_GB = (Ε:nation, name:"State of Great Britain")
+  Ε:representatives = (Ε:group, role:"Representatives of the united States of America", location:"General Congress")
+  Ε:USA = (Ε:nation, name:"united States of America", {μ:note="Use of 'united' as adjective here"})
+  Ε:divine_providence = (Ε:concept, descr:"protection of divine Providence")
+  Ε:fortune = (Ε:possession, type:material_wealth, plural:true) // fortunes
+  Ε:honor = (Ε:concept, type:sacred_personal_integrity)
+  Ε:brethren_GB = (Ε:people, descr:"British brethren")
+  Ε:justice_concept = (Ε:concept, type:moral_fairness)
+  Ε:magnanimity = (Ε:virtue, type:generosity_of_spirit)
+  Ε:consanguinity = (Ε:kinship, type:blood_relation)
+  Ε:enemies = (Ε:group, relation:hostile_in_war)
+  Ε:friends = (Ε:group, relation:amicable_in_peace)
+
+  // Core Actions/Processes
+  Π:dissolve = (Π:action, type:terminate_connection)
+  Π:assume = (Π:action, type:take_up_position)
+  Π:entitle = (Π:action, type:grant_right_to)
+  Π:impel = (Π:action, type:force_or_urge)
+  Π:declare = (Π:action, type:formal_announcement)
+  Π:hold = (Π:action, type:believe_or_assert)
+  Π:create = (Π:action, type:bring_into_existence)
+  Π:endow = (Π:action, type:provide_with_quality_or_possession)
+  Π:secure = (Π:action, type:make_safe_or_guarantee)
+  Π:institute = (Π:action, type:establish_formally)
+  Π:derive = (Π:action, type:obtain_from_source)
+  Π:alter = (Π:action, type:change_or_modify)
+  Π:abolish = (Π:action, type:formally_put_an_end_to)
+  Π:provide = (Π:action, type:supply_or_make_available)
+  Π:suffer = (Π:action, type:endure_hardship)
+  Π:evince = (Π:action, type:reveal_presence_of_quality_or_feeling)
+  Π:reduce = (Π:action, type:bring_to_lesser_state)
+  Π:throw_off = (Π:action, type:cast_off_burden_or_restraint)
+  Π:prove = (Π:action, type:demonstrate_by_evidence)
+  Π:submit_to = (Π:action, type:present_for_consideration)
+
+  // Core Attributes/Qualities
+  Α:necessary = (Α:quality, state:required)
+  Α:separate_and_equal = (Α:quality, state:distinct_and_equivalent_station)
+  Α:decent_respect = (Α:quality, state:proper_regard)
+  Α:self_evident = (Α:quality, state:obvious_without_proof)
+  Α:equal = (Α:quality, state:same_in_rights_and_dignity)
+  Α:unalienable = (Α:quality, state:cannot_be_taken_away_or_given_away)
+  Α:just = (Α:quality, state:based_on_fairness_and_law)
+  Α:destructive = (Α:quality, state:causing_great_harm_or_damage)
+  Α:right_and_duty = (Α:state, combined:true, {μ:note:"Both an entitlement and an obligation"})
+  Α:transient = (Α:quality, state:lasting_for_short_time_only)
+  Α:sufferable = (Α:quality, state:able_to_be_endured)
+  Α:absolute = (Α:quality, state:total_and_unrestricted)
+  Α:candid = (Α:quality, state:truthful_and_straightforward)
+  Α:repeated = (Α:quality, state:done_or_occurring_again_several_times)
+  Α:free_and_independent = (Α:quality, state:sovereign, combined:true)
+  Α:full_power = (Α:quality, state:complete_authority)
+  Α:sacred = (Α:quality, state:regarded_with_great_respect_and_reverence)
+  Α:humble_terms = (Α:manner, state:respectful_and_modest_language)
+  Α:unwarrantable_jurisdiction = (Α:power, state:unjustified_authority)
+  Α:native_justice = (Α:virtue, type:innate_sense_of_fairness)
+  Α:magnanimous = (Α:quality, state:generous_or_forgiving)
+  Α:deaf = (Α:state, metaphor:unresponsive)
+
+  //Chronoglyph Specific
+  CGP:EOL = (CGP:syntax, element:end_of_line_statement) // End of Line / Statement
+}
+
+◉PREAMBLE≡{
+  // When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another,
+  // and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them,
+  // a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.
+  §temporal(present_continuous) Π:course_of(Ε:human_events) →
+    §modal(necessary) ∀(Ε:people) {
+      Π:dissolve(Ε:political_bands {μ:target_connection=Ε:another_people}) ∧
+      Π:assume(among:Ε:nations, Α:separate_and_equal_station {μ:source=Π:entitle(by:[Ε:nature, Ε:God])})
+    } →
+  Α:decent_respect⊛Ε:mankind ⇒ Ε:people {
+    Π:declare(Ε:causes {μ:reason_for=Π:impel(to:Α:separation)})
+  } CGP:EOL
+}
+
+◉PRINCIPLES≡{
+  // We hold these truths to be self-evident, that all men are created equal,
+  // that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
+  Ε:representatives {μ:acting_as="We"} Π:hold(Ε:truths {μ:quality=Α:self_evident}) := [
+    ∀(Ε:men) {Π:create(Α:equal) {μ:agent=Ε:creator}} ∧
+    Ε:men {Π:endow(by:Ε:creator, with:Ε:rights⁺ {Α:unalienable}) {
+      μ:examples_among_these=[Ε:life, Ε:liberty, Ε:pursuit_of_happiness]
+    }}
+  ] CGP:EOL
+
+  // That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed,
+  Π:purpose_of(Π:secure(Ε:rights⁺)) → Ε:governments {Π:institute(among:Ε:men) ∧ Π:derive(Α:just_powers, from:Σ:consent_of(Ε:governed))} CGP:EOL
+
+  // That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it,
+  // and to institute new Government, laying its foundation on such principles and organizing its powers in such form,
+  // as to them shall seem most likely to effect their Safety and Happiness.
+  ∀(Ε:form_of_government) {
+    Ε:form_of_government {Π:becomes(Α:destructive, of:Ε:ends {μ:ref="secure_rights"})} →
+    Ε:people ⇒ Α:right_and_duty {
+      Π:alter(Ε:form_of_government) ∨ Π:abolish(Ε:form_of_government)
+    } ∧
+    Ε:people ⇒ Π:institute(Ε:government {μ:quality="new"}) {
+      Π:lay_foundation(on:Ε:principles {μ:criteria="likelihood_to_effect_safety_happiness"}) ∧
+      Π:organize_powers(in:Ε:form {μ:criteria="likelihood_to_effect_safety_happiness"})
+    }
+  } CGP:EOL
+
+  // Prudence, indeed, will dictate that Governments long established should not be changed for light and transient causes;
+  // and accordingly all experience hath shewn, that mankind are more disposed to suffer, while evils are sufferable,
+  // than to right themselves by abolishing the forms to which they are accustomed.
+  Ε:prudence Π:dictate(¬(Π:change(Ε:governments {Α:long_established}, for:Ε:causes {Α:transient}))) CGP:EOL
+  Ε:experience Π:shewn(
+    Ε:mankind {Π:more_disposed_to(Π:suffer(while:Ε:evils {Α:sufferable}))} ↔
+    ¬(Ε:mankind {Π:more_disposed_to(Π:right_themselves(by:Π:abolish(Ε:forms_of_government {Α:accustomed})))})
+  ) CGP:EOL
+
+  // But when a long train of abuses and usurpations, pursuing invariably the same Object evinces a design to reduce them under absolute Despotism,
+  // it is their right, it is their duty, to throw off such Government, and to provide new Guards for their future security.
+  ∵ (Ε:long_train_of_abuses_usurpations {Π:pursuing(invariably:Ε:same_object) ∧ Π:evince(Ε:design {Π:reduce(under:Ε:despotism)})}) →
+    Ε:people ⇒ Α:right_and_duty {
+      Π:throw_off(Ε:government {μ:type="such"}) ∧
+      Π:provide(Ε:guards {μ:type="new", purpose:Ε:future_security})
+    } CGP:EOL
+}
+
+◉HISTORY_KING_GB≡{
+  // Such has been the patient sufferance of these Colonies; and such is now the necessity which constrains them to alter their former Systems of Government.
+  Ε:patient_sufferance(of:Ε:colonies) := Α:past_condition CGP:EOL
+  Α:necessity {Π:constrains(Ε:colonies, to:Π:alter(Ε:systems_of_government {Α:former}))} := Α:present_condition CGP:EOL
+
+  // The history of the present King of Great Britain is a history of repeated injuries and usurpations,
+  // all having in direct object the establishment of an absolute Tyranny over these States.
+  Ε:history(of:Ε:king_GB {Α:present}) := Ε:history(of:[Α:repeated Π:injuries, Α:repeated Π:usurpations]) {
+    ∀(item) → item {Π:has_direct_object(Π:establishment(Ε:tyranny {Α:absolute, over:Ε:states}))}
+  } CGP:EOL
+
+  // To prove this, let Facts be submitted to a candid world.
+  Π:purpose_of(Π:prove(this)) → Π:submit_to(Ε:facts, to:Ε:world {Α:candid}) CGP:EOL
+}
+
+◉GRIEVANCES≡{
+  // He has refused his Assent to Laws, the most wholesome and necessary for the public good.
+  G1: Ε:king_GB {§temporal(past_simple) Π:refused_assent_to(Ε:laws {Α:most_wholesome ∧ Α:necessary, for:Ε:public_good})} CGP:EOL
+
+  // He has forbidden his Governors to pass Laws of immediate and pressing importance,
+  // unless suspended in their operation till his Assent should be obtained; and when so suspended, he has utterly neglected to attend to them.
+  G2: Ε:king_GB {§temporal(past_simple) Π:forbidden(Ε:governors, to:Π:pass_laws {Α:immediate_importance ∧ Α:pressing_importance})}
+      unless (Ε:laws {Π:suspend_operation(until:Π:obtain_assent(Ε:king_GB))}) CGP:EOL
+      ∵ (Ε:laws {Π:suspended_operation}) → Ε:king_GB {§temporal(past_simple) Π:utterly_neglected_to_attend_to(Ε:laws)} CGP:EOL
+
+  // He has refused to pass other Laws for the accommodation of large districts of people,
+  // unless those people would relinquish the right of Representation in the Legislature, a right inestimable to them and formidable to tyrants only.
+  G3: Ε:king_GB {§temporal(past_simple) Π:refused_to_pass(Ε:laws {μ:type="other", purpose:Π:accommodation(Ε:large_districts_of_people)})}
+      unless (Ε:people {Π:relinquish(Ε:right_of_representation {in:Ε:legislature, Α:inestimable_to_them ∧ Α:formidable_to_tyrants_only})}) CGP:EOL
+
+  // He has called together legislative bodies at places unusual, uncomfortable, and distant from the depository of their public Records,
+  // for the sole purpose of fatiguing them into compliance with his measures.
+  G4: Ε:king_GB {§temporal(past_simple) Π:called_together(Ε:legislative_bodies, at:Ε:places {Α:unusual ∧ Α:uncomfortable ∧ Α:distant_from_records_depository})}
+      {μ:sole_purpose=Π:fatigue_into_compliance(with:Ε:king_GB_measures)} CGP:EOL
+
+  // He has dissolved Representative Houses repeatedly, for opposing with manly firmness his invasions on the rights of the people.
+  G5: Ε:king_GB {§temporal(past_simple) Π:dissolved(Ε:representative_houses, Α:repeatedly)}
+      ∵ (Ε:representative_houses {Π:opposing(with:Α:manly_firmness, Ε:king_GB_invasions {on:Ε:rights_of_people})}) CGP:EOL
+
+  // He has refused for a long time, after such dissolutions, to cause others to be elected;
+  // whereby the Legislative powers, incapable of Annihilation, have returned to the People at large for their exercise;
+  // the State remaining in the mean time exposed to all the dangers of invasion from without, and convulsions within.
+  G6: Ε:king_GB {§temporal(past_simple) Π:refused(for:Α:long_time, after:Ε:dissolutions, to:Π:cause_others_elected)} →
+      Ε:legislative_powers {Α:incapable_of_annihilation, Π:returned_to(Ε:people_at_large, for:Ε:exercise)} ∧
+      Ε:state {§temporal(mean_time) Π:remaining(Α:exposed_to_dangers {of:[Ε:invasion_from_without, Ε:convulsions_within]})} CGP:EOL
+
+  // He has endeavoured to prevent the population of these States;
+  // for that purpose obstructing the Laws for Naturalization of Foreigners; refusing to pass others to encourage their migrations hither,
+  // and raising the conditions of new Appropriations of Lands.
+  G7: Ε:king_GB {§temporal(past_simple) Π:endeavoured_to_prevent(Ε:population_of_states)}
+      ∵ (Ε:king_GB {Π:obstructing(Ε:laws_for_naturalization_of_foreigners) ∧
+                   Π:refusing_to_pass(Ε:laws {Π:encourage_migrations_hither}) ∧
+                   Π:raising_conditions(Ε:new_appropriations_of_lands)}) CGP:EOL
+
+  // He has obstructed the Administration of Justice, by refusing his Assent to Laws for establishing Judiciary powers.
+  G8: Ε:king_GB {§temporal(past_simple) Π:obstructed(Ε:administration_of_justice)}
+      ∵ (Ε:king_GB {Π:refusing_assent_to(Ε:laws {Π:establishing_judiciary_powers})}) CGP:EOL
+
+  // He has made Judges dependent on his Will alone, for the tenure of their offices, and the amount and payment of their salaries.
+  G9: Ε:king_GB {§temporal(past_simple) Π:made(Ε:judges, Α:dependent_on_will_alone {of:Ε:king_GB})}
+      {μ:dependency_areas=["tenure_of_offices", "amount_and_payment_of_salaries"]} CGP:EOL
+
+  // He has erected a multitude of New Offices, and sent hither swarms of Officers to harrass our people, and eat out their substance.
+  G10: Ε:king_GB {§temporal(past_simple) Π:erected(Ε:multitude_of_new_offices)} ∧
+       Ε:king_GB {§temporal(past_simple) Π:sent_hither(Ε:swarms_of_officers {Π:harass(Ε:our_people) ∧ Π:eat_out_substance(Ε:our_people)})} CGP:EOL
+
+  // He has kept among us, in times of peace, Standing Armies without the Consent of our legislatures.
+  G11: Ε:king_GB {§temporal(past_simple) Π:kept_among_us(Ε:standing_armies, in:Ε:times_of_peace)}
+       {μ:condition=¬Σ:consent_of(Ε:our_legislatures)} CGP:EOL
+
+  // He has affected to render the Military independent of and superior to the Civil power.
+  G12: Ε:king_GB {§temporal(past_simple) Π:affected_to_render(Ε:military, [Α:independent_of_civil_power, Α:superior_to_civil_power])} CGP:EOL
+
+  // He has combined with others to subject us to a jurisdiction foreign to our constitution, and unacknowledged by our laws;
+  // giving his Assent to their Acts of pretended Legislation:
+  G13: Ε:king_GB {§temporal(past_simple) Π:combined_with_others(to:Π:subject_us(to:Ε:jurisdiction {Α:foreign_to_constitution ∧ Α:unacknowledged_by_laws}))}
+       ∧ Ε:king_GB {Π:giving_assent_to(Ε:acts_of_pretended_legislation {of:Ε:others})} CGP:EOL
+  G13a: // For Quartering large bodies of armed troops among us:
+        Ε:acts_of_pretended_legislation includes Π:quartering(Ε:large_bodies_of_armed_troops, among_us:true) CGP:EOL
+  G13b: // For protecting them, by a mock Trial, from punishment for any Murders which they should commit on the Inhabitants of these States:
+        Ε:acts_of_pretended_legislation includes Π:protecting(Ε:them, from:Ε:punishment_for_murders {on:Ε:inhabitants_of_states}, by:Ε:mock_trial) CGP:EOL
+  G13c: // For cutting off our Trade with all parts of the world:
+        Ε:acts_of_pretended_legislation includes Π:cutting_off_trade(with:Ε:all_parts_of_world) CGP:EOL
+  G13d: // For imposing Taxes on us without our Consent:
+        Ε:acts_of_pretended_legislation includes Π:imposing_taxes(on_us:true, {μ:condition=¬Σ:consent_of(us)}) CGP:EOL
+  G13e: // For depriving us in many cases, of the benefits of Trial by Jury:
+        Ε:acts_of_pretended_legislation includes Π:depriving_us(in:Ε:many_cases, of:Ε:benefits_of_trial_by_jury) CGP:EOL
+  G13f: // For transporting us beyond Seas to be tried for pretended offences:
+        Ε:acts_of_pretended_legislation includes Π:transporting_us_beyond_seas(to:Π:be_tried(for:Ε:pretended_offences)) CGP:EOL
+  G13g: // For abolishing the free System of English Laws in a neighbouring Province, establishing therein an Arbitrary government,
+        // and enlarging its Boundaries so as to render it at once an example and fit instrument for introducing the same absolute rule into these Colonies:
+        Ε:acts_of_pretended_legislation includes [
+          Π:abolishing(Ε:free_system_of_english_laws, in:Ε:neighbouring_province) ∧
+          Π:establishing_therein(Ε:arbitrary_government) ∧
+          Π:enlarging_boundaries(of:Ε:province, {μ:purpose=Π:render_as_example_and_fit_instrument(for:Π:introducing_same_absolute_rule_into_colonies)})
+        ] CGP:EOL
+  G13h: // For taking away our Charters, abolishing our most valuable Laws, and altering fundamentally the Forms of our Governments:
+        Ε:acts_of_pretended_legislation includes [
+          Π:taking_away_charters ∧ Π:abolishing_valuable_laws ∧ Π:altering_fundamentally_forms_of_governments
+        ] CGP:EOL
+  G13i: // For suspending our own Legislatures, and declaring themselves invested with power to legislate for us in all cases whatsoever.
+        Ε:acts_of_pretended_legislation includes [
+          Π:suspending_own_legislatures ∧ Π:declaring_themselves_invested_with_power(to:Π:legislate_for_us_in_all_cases)
+        ] CGP:EOL
+
+  // He has abdicated Government here, by declaring us out of his Protection and waging War against us.
+  G14: Ε:king_GB {§temporal(past_simple) Π:abdicated_government_here}
+       ∵ (Ε:king_GB {Π:declaring_us_out_of_protection ∧ Π:waging_war_against_us}) CGP:EOL
+
+  // He has plundered our seas, ravaged our Coasts, burnt our towns, and destroyed the lives of our people.
+  G15: Ε:king_GB {§temporal(past_simple) [
+         Π:plundered_seas ∧ Π:ravaged_coasts ∧ Π:burnt_towns ∧ Π:destroyed_lives_of_people
+       ]} CGP:EOL
+
+  // He is at this time transporting large Armies of foreign Mercenaries to compleat the works of death, desolation and tyranny,
+  // already begun with circumstances of Cruelty & perfidy scarcely paralleled in the most barbarous ages, and totally unworthy the Head of a civilized nation.
+  G16: Ε:king_GB {§temporal(present_continuous) Π:transporting(Ε:large_armies_of_foreign_mercenaries)}
+       {μ:purpose=Π:compleat_works(of:[Ε:death, Ε:desolation, Ε:tyranny])}
+       {μ:works_already_begun_with_circumstances=[
+         Α:cruelty_and_perfidy {Α:scarcely_paralleled_in_barbarous_ages ∧ Α:totally_unworthy_head_of_civilized_nation}
+       ]} CGP:EOL
+
+  // He has constrained our fellow Citizens taken Captive on the high Seas to bear Arms against their Country,
+  // to become the executioners of their friends and Brethren, or to fall themselves by their Hands.
+  G17: Ε:king_GB {§temporal(past_simple) Π:constrained(Ε:fellow_citizens {Π:taken_captive_on_high_seas})}
+       to: [Π:bear_arms_against_country ∨ Π:become_executioners(of:[Ε:friends, Ε:brethren]) ∨ Π:fall_by_their_hands] CGP:EOL
+
+  // He has excited domestic insurrections amongst us, and has endeavoured to bring on the inhabitants of our frontiers,
+  // the merciless Indian Savages, whose known rule of warfare, is an undistinguished destruction of all ages, sexes and conditions.
+  G18: Ε:king_GB {§temporal(past_simple) Π:excited_domestic_insurr
